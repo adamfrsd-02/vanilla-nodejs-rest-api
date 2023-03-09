@@ -1,0 +1,183 @@
+{
+  "info": {
+    "_postman_id": "54adc816-9ee5-462c-afa8-42ee3e9e8831",
+    "name": "Vanilla NodeJS API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Barang API",
+      "item": [
+        {
+          "name": "Get All Barang",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/barangs",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "barangs"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get One Barang By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/barangs/4",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "barangs", "4"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Barang",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\": \"Tas Laptop\",\r\n    \"harga\": 200000,\r\n    \"stok\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8000/api/barangs",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "barangs"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Barang",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\": \"Tas Kerja\",\r\n    \"harga\": 500000,\r\n    \"stok\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8000/api/barangs/12",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "barangs", "12"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Barang",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/barangs/4",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "barangs", "4"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Kategori API",
+      "item": [
+        {
+          "name": "Get All Kategori",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Get One Kategori By ID",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Post Kategori",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\": \"Makanan\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8000/api/kategoris",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "kategoris"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Kategori",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\": \"Peralatan Rumah Tangga\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8000/api/kategoris/13",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "kategoris", "13"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Kategori",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/kategoris/9",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "kategoris", "9"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
